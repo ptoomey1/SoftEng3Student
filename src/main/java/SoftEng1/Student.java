@@ -99,10 +99,5 @@ public void addModule(Module module){
 public boolean removeModule(Module module){
     return modules.remove(module);
     }
-
-    
-    //public static void main(String[] args) {
-       
-    //}
     
 }
