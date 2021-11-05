@@ -45,8 +45,8 @@ public int getID(){
     return ID;
 }
 
-public String getUsername(String username){
-    username = "Student.getName" + "Student.getAge";
+public String getUsername(){
+    String username = "Student.getName" + "Student.getAge";
     return username;
 }
 
