@@ -1,17 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ *
+ * @author Pádraic Toomey 17316616 4th ECE
  */
 package SoftEng1;
 
 import org.joda.time.*;
 import java.util.ArrayList;
 
-/**
- *
- * @author 35386
- */
 public class Student {
 private String name;
 private LocalDate DOB;
@@ -99,5 +94,8 @@ public void addModule(Module module){
 public boolean removeModule(Module module){
     return modules.remove(module);
     }
+
+public static void main(String[] args){
+}
     
 }

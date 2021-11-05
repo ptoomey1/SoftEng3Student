@@ -20,7 +20,7 @@ import static org.junit.Assert.*;
  */
 public class StudentTest {
     
-Student studentA;
+    Student studentA;
 String name;
 int age;
 
@@ -50,7 +50,7 @@ ArrayList<Module> modules= new ArrayList<>();
         moduleA = new Module("SoftEng3","CT417");
         moduleB = new Module("RealTimeSystems","CT420");
         moduleC = new Module("EngineeringElectromagnetics","EE348");
-
+        
     }
     
     @BeforeClass
@@ -76,11 +76,10 @@ ArrayList<Module> modules= new ArrayList<>();
     public void testGetName() {
         System.out.println("getName");
         Student instance = null;
-        String expResult = "Padraic Toomey";
+        String expResult = "";
         String result = instance.getName();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -90,11 +89,9 @@ ArrayList<Module> modules= new ArrayList<>();
     public void testGetAge() {
         System.out.println("getAge");
         Student instance = null;
-        int expResult = 23;
+        int expResult = 0;
         int result = instance.getAge();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -107,8 +104,6 @@ ArrayList<Module> modules= new ArrayList<>();
         LocalDate expResult = null;
         LocalDate result = instance.getDOB();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -121,8 +116,6 @@ ArrayList<Module> modules= new ArrayList<>();
         int expResult = 0;
         int result = instance.getID();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -131,13 +124,10 @@ ArrayList<Module> modules= new ArrayList<>();
     @Test
     public void testGetUsername() {
         System.out.println("getUsername");
-        String username = "";
         Student instance = null;
         String expResult = "";
-        String result = instance.getUsername(username);
+        String result = instance.getUsername();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -150,8 +140,6 @@ ArrayList<Module> modules= new ArrayList<>();
         ArrayList<Course> expResult = null;
         ArrayList<Course> result = instance.getCourses();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -164,8 +152,6 @@ ArrayList<Module> modules= new ArrayList<>();
         ArrayList<Module> expResult = null;
         ArrayList<Module> result = instance.getModules();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -177,8 +163,6 @@ ArrayList<Module> modules= new ArrayList<>();
         ArrayList<Course> courses = null;
         Student instance = null;
         instance.setCourses(courses);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -190,8 +174,6 @@ ArrayList<Module> modules= new ArrayList<>();
         ArrayList<Module> modules = null;
         Student instance = null;
         instance.setModules(modules);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -203,8 +185,6 @@ ArrayList<Module> modules= new ArrayList<>();
         String name = "";
         Student instance = null;
         instance.setName(name);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -216,8 +196,6 @@ ArrayList<Module> modules= new ArrayList<>();
         LocalDate DOB = null;
         Student instance = null;
         instance.setDOB(DOB);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -229,8 +207,6 @@ ArrayList<Module> modules= new ArrayList<>();
         int ID = 0;
         Student instance = null;
         instance.setID(ID);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -242,8 +218,6 @@ ArrayList<Module> modules= new ArrayList<>();
         Course course = null;
         Student instance = null;
         instance.addCourse(course);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -257,8 +231,6 @@ ArrayList<Module> modules= new ArrayList<>();
         boolean expResult = false;
         boolean result = instance.removeCourse(course);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -270,8 +242,6 @@ ArrayList<Module> modules= new ArrayList<>();
         Module module = null;
         Student instance = null;
         instance.addModule(module);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -285,20 +255,6 @@ ArrayList<Module> modules= new ArrayList<>();
         boolean expResult = false;
         boolean result = instance.removeModule(module);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    /**
-     * Test of main method, of class Student.
-     */
-    @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        Student.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
