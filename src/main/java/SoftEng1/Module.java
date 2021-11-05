@@ -5,8 +5,8 @@
 package SoftEng1;
 
 public class Module {
-    private String moduleName;
-    private String moduleID;
+    public String moduleName;
+    public String moduleID;
 
     Module(String name, String ID){
         this.moduleName=name;

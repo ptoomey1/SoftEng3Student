@@ -9,10 +9,10 @@ import org.joda.time.LocalDate;
 import java.util.ArrayList;
 
 public class Course {
-    private String name;
-    private ArrayList<Module> modules;
-    private LocalDate startDate;
-    private LocalDate endDate;
+    public String name;
+    public ArrayList<Module> modules;
+    public LocalDate startDate;
+    public LocalDate endDate;
 
     Course(String name, ArrayList<Module> modules, LocalDate startDate, LocalDate endDate){
         this.name = name;
@@ -55,7 +55,7 @@ public class Course {
     public boolean removeModule(Module module){
         return modules.remove(module);
     }
-    public void addModule(Module module){
+    public void addCourse(Module module){
         modules.add(module);
     }
 
