@@ -5,10 +5,10 @@
 package SoftEng1;
 
 public class Module {
-    public String moduleName;
-    public String moduleID;
+    private String moduleName;
+    private String moduleID;
 
-    Module(String name, String ID){
+    public Module(String name, String ID){
         this.moduleName=name;
         this.moduleID=ID;
     }

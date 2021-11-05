@@ -14,7 +14,7 @@ public class Course {
     public LocalDate startDate;
     public LocalDate endDate;
 
-    Course(String name, ArrayList<Module> modules, LocalDate startDate, LocalDate endDate){
+    public Course(String name, ArrayList<Module> modules, LocalDate startDate, LocalDate endDate){
         this.name = name;
         this.modules= modules;
         this.startDate=startDate;
