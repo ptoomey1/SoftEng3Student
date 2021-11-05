@@ -55,7 +55,7 @@ public class Course {
     public boolean removeModule(Module module){
         return modules.remove(module);
     }
-    public void addCourse(Module module){
+    public void addModule(Module module){
         modules.add(module);
     }
 
